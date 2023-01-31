@@ -1,11 +1,10 @@
 # Eloquent Encryption
 
-This package enables an additional layer of security when handling sensitive data. Allowing key fields of your eloquent models in the database to be encrypted at rest.
+Please note that this is fork from RichardStyles - https://github.com/RichardStyles/EloquentEncryption
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/richardstyles/eloquentencryption.svg?style=flat-square)](https://packagist.org/packages/richardstyles/eloquentencryption)
-[![Build Status](https://img.shields.io/travis/richardstyles/eloquentencryption/master.svg?style=flat-square)](https://travis-ci.org/richardstyles/eloquentencryption)
-[![Quality Score](https://img.shields.io/scrutinizer/g/richardstyles/eloquentencryption.svg?style=flat-square)](https://scrutinizer-ci.com/g/richardstyles/eloquentencryption)
-[![Total Downloads](https://img.shields.io/packagist/dt/richardstyles/eloquentencryption.svg?style=flat-square)](https://packagist.org/packages/richardstyles/eloquentencryption)
+This fork will encode the encrypted information in to base64 before storing.
+
+This package enables an additional layer of security when handling sensitive data. Allowing key fields of your eloquent models in the database to be encrypted at rest.
 
 ## Introduction
 
@@ -14,8 +13,6 @@ It uses default 4096-bit RSA keys to encrypt your data securely and Laravel mode
 
 Usually, you would use [Laravel's Encrypter](https://laravel.com/docs/8.x/encryption) to encrypt the data, but this has the limitation of using the `app:key` as the private secret. As the app key also secures session/cookie data, it is [advised that you rotate this every so often](https://tighten.co/blog/app-key-and-you/) - if you're storing encrypted data using this method you have to decrypt it all first and re-encrypt whenever this is done. Therefore this package improves on this by creating a separate and stronger encryption process allowing you to rotate the app:key. This allows for a  level of security of sensitive model data within your Laravel application and your database.
 
-If you don't want to use RSA keys, then I have another package [Eloquent AES](https://github.com/RichardStyles/eloquent-aes) which uses a separate key `eloquent_key` to encrypt using AES-256-CBC.
-
 ## Installation
 
 This package requires Laravel 8.x or higher.
@@ -23,7 +20,7 @@ This package requires Laravel 8.x or higher.
 You can install the package via composer:
 
 ```bash
-composer require richardstyles/eloquentencryption
+composer require powerlabs/eloquentencryption
 ```
 
 You do not need to register the ServiceProvider as this package uses Laravel Package auto discovery.
@@ -32,7 +29,7 @@ The Migration blueprint helpers are added using macros, so do not affect the sch
 The configuration can be published using this command, if you need to change the RSA key size, storage path and key file names.
 
 ```bash
-php artisan vendor:publish --provider="RichardStyles\EloquentEncryption\EloquentEncryptionServiceProvider" --tag="config"
+php artisan vendor:publish --provider="PowerLabs\EloquentEncryption\EloquentEncryptionServiceProvider" --tag="config"
 ```
 
 In order to encrypt and decrypt data you need to generate RSA keys for this package. By default, this will create 4096-bit RSA keys to your `storage/` directory. **Do not add these to version control** and backup accordingly.
@@ -67,7 +64,7 @@ Otherwise your data may not be decrypted as expected. If you are on 2.x you shou
 
 In your AppServiceProvider 
 ```php
-EncryptedCast::encryptUsing(new \RichardStyles\EloquentEncryption\EloquentEncryption);
+EncryptedCast::encryptUsing(new \PowerLabs\EloquentEncryption\EloquentEncryption);
 ```
 
 Then on your models, use the built in encrypted casts as needed.
@@ -97,11 +94,11 @@ This package leverages Laravel's own [custom casting](https://laravel.com/docs/8
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use RichardStyles\EloquentEncryption\Casts\Encrypted;
-use RichardStyles\EloquentEncryption\Casts\EncryptedInteger;
-use RichardStyles\EloquentEncryption\Casts\EncryptedFloat;
-use RichardStyles\EloquentEncryption\Casts\EncryptedCollection;
-use RichardStyles\EloquentEncryption\Casts\EncryptedBoolean;
+use PowerLabs\EloquentEncryption\Casts\Encrypted;
+use PowerLabs\EloquentEncryption\Casts\EncryptedInteger;
+use PowerLabs\EloquentEncryption\Casts\EncryptedFloat;
+use PowerLabs\EloquentEncryption\Casts\EncryptedCollection;
+use PowerLabs\EloquentEncryption\Casts\EncryptedBoolean;
 
 class SalesData extends Model
 {
@@ -134,7 +131,7 @@ By default, this package uses a storage handler, which saves the generated key p
      * existence and returned for Encryption and Decryption. This allows for keys to
      * be held in secure Vaults or through another provider.
      */
-    'handler' => \RichardStyles\EloquentEncryption\FileSystem\RsaKeyStorageHandler::class,
+    'handler' => \PowerLabs\EloquentEncryption\FileSystem\RsaKeyStorageHandler::class,
 ```
 
 ### Query Builder
@@ -159,7 +156,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 If you are having general issues with this package, feel free to contact me on [Twitter](https://twitter.com/StylesGoTweet).
 
-If you believe you have found an issue, please report it using the [GitHub issue tracker](https://github.com/RichardStyles/EloquentEncryption/issues), or better yet, fork the repository and submit a pull request with a failing test.
+If you believe you have found an issue, please report it using the [GitHub issue tracker](https://github.com/PowerLabs/EloquentEncryption/issues), or better yet, fork the repository and submit a pull request with a failing test.
 
 If you're using this package, I'd love to hear your thoughts. Thanks!
 
@@ -170,6 +167,7 @@ If you discover any security related issues, please email richard@udeploy.dev in
 ## Credits
 
 - [Richard Styles](https://github.com/richardstyles)
+- [PowerLabs](https://github.com/PowerLabs-NZ)
 - [All Contributors](../../contributors)
 
 ## License
