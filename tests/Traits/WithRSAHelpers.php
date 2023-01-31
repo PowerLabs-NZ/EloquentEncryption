@@ -1,7 +1,7 @@
 <?php
 
 
-namespace RichardStyles\EloquentEncryption\Tests\Traits;
+namespace PowerLabs-NZ\EloquentEncryption\Tests\Traits;
 
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Http\UploadedFile;

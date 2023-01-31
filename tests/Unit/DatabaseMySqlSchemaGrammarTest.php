@@ -1,12 +1,12 @@
 <?php
 
-namespace RichardStyles\EloquentEncryption\Tests\Unit;
+namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
 
 use Illuminate\Database\Schema\Grammars\MySqlGrammar;
 use Mockery;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint;
-use RichardStyles\EloquentEncryption\Tests\TestCase;
+use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
 
 class DatabaseMySqlSchemaGrammarTest extends TestCase
 {

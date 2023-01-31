@@ -1,14 +1,14 @@
 <?php
 
 
-namespace RichardStyles\EloquentEncryption\Tests\Unit;
+namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
 
 
 use Illuminate\Foundation\Auth\User;
-use RichardStyles\EloquentEncryption\Casts\Encrypted;
-use RichardStyles\EloquentEncryption\Casts\EncryptedBoolean;
-use RichardStyles\EloquentEncryption\EloquentEncryptionFacade;
-use RichardStyles\EloquentEncryption\Tests\TestCase;
+use PowerLabs-NZ\EloquentEncryption\Casts\Encrypted;
+use PowerLabs-NZ\EloquentEncryption\Casts\EncryptedBoolean;
+use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
 
 class EncryptedBooleanCastTest extends TestCase
 {

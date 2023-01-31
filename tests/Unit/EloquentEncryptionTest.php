@@ -1,14 +1,14 @@
 <?php
 
-namespace RichardStyles\EloquentEncryption\Tests\Unit;
+namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
-use RichardStyles\EloquentEncryption\EloquentEncryption;
-use RichardStyles\EloquentEncryption\Exceptions\InvalidRsaKeyHandler;
-use RichardStyles\EloquentEncryption\Exceptions\RSAKeyFileMissing;
-use RichardStyles\EloquentEncryption\Tests\TestCase;
-use RichardStyles\EloquentEncryption\Tests\Traits\WithRSAHelpers;
+use PowerLabs-NZ\EloquentEncryption\EloquentEncryption;
+use PowerLabs-NZ\EloquentEncryption\Exceptions\InvalidRsaKeyHandler;
+use PowerLabs-NZ\EloquentEncryption\Exceptions\RSAKeyFileMissing;
+use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
+use PowerLabs-NZ\EloquentEncryption\Tests\Traits\WithRSAHelpers;
 
 class EloquentEncryptionTest extends TestCase
 {

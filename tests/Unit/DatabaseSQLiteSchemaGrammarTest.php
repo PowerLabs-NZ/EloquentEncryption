@@ -1,12 +1,12 @@
 <?php
 
-namespace RichardStyles\EloquentEncryption\Tests\Unit;
+namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
 
 use Illuminate\Database\Schema\Grammars\SQLiteGrammar;
 use Mockery;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint;
-use RichardStyles\EloquentEncryption\Tests\TestCase;
+use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
 
 class DatabaseSQLiteSchemaGrammarTest extends TestCase
 {

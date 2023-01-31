@@ -1,7 +1,7 @@
 <?php
 
 
-namespace RichardStyles\EloquentEncryption\Casts;
+namespace PowerLabs-NZ\EloquentEncryption\Casts;
 
 
 class EncryptedFloat extends Encrypted

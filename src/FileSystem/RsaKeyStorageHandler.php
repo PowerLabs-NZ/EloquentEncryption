@@ -1,13 +1,13 @@
 <?php
 
 
-namespace RichardStyles\EloquentEncryption\FileSystem;
+namespace PowerLabs-NZ\EloquentEncryption\FileSystem;
 
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
-use RichardStyles\EloquentEncryption\Contracts\RsaKeyHandler;
-use RichardStyles\EloquentEncryption\Exceptions\RSAKeyFileMissing;
+use PowerLabs-NZ\EloquentEncryption\Contracts\RsaKeyHandler;
+use PowerLabs-NZ\EloquentEncryption\Exceptions\RSAKeyFileMissing;
 
 class RsaKeyStorageHandler implements RsaKeyHandler
 {

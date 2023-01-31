@@ -1,14 +1,14 @@
 <?php
 
-namespace RichardStyles\EloquentEncryption;
+namespace PowerLabs-NZ\EloquentEncryption;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\ColumnDefinition;
 use Illuminate\Database\Schema\Grammars\Grammar;
 use Illuminate\Support\Fluent;
 use Illuminate\Support\ServiceProvider;
-use RichardStyles\EloquentEncryption\Console\Commands\GenerateRsaKeys;
-use RichardStyles\EloquentEncryption\Exceptions\UnknownGrammarClass;
+use PowerLabs-NZ\EloquentEncryption\Console\Commands\GenerateRsaKeys;
+use PowerLabs-NZ\EloquentEncryption\Exceptions\UnknownGrammarClass;
 
 class EloquentEncryptionServiceProvider extends ServiceProvider
 {
