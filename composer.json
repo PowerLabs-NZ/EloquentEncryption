@@ -1,5 +1,5 @@
 {
-    "name": "powerlabs-nz/eloquentencryption",
+    "name": "powerlabsnz/eloquentencryption",
     "description": "Allow Eloquent attributes to be encrypted and decrypted using a RSA 4096-bit private keys.",
     "keywords": [
         "powerlabs",
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RichardStyles\\EloquentEncryption\\": "src"
+            "PowerLabs\\EloquentEncryption\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RichardStyles\\EloquentEncryption\\Tests\\": "tests"
+            "PowerLabs\\EloquentEncryption\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PowerLabs-NZ\\EloquentEncryption\\EloquentEncryptionServiceProvider"
+                "PowerLabs\\EloquentEncryption\\EloquentEncryptionServiceProvider"
             ],
             "aliases": {
-                "EloquentEncryption": "PowerLabs-NZ\\EloquentEncryption\\EloquentEncryptionFacade"
+                "EloquentEncryption": "PowerLabs\\EloquentEncryption\\EloquentEncryptionFacade"
             }
         }
     }
