@@ -1,8 +1,8 @@
 <?php
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests;
+namespace PowerLabs\EloquentEncryption\Tests;
 
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionServiceProvider;
+use PowerLabs\EloquentEncryption\EloquentEncryptionServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Casts;
+namespace PowerLabs\EloquentEncryption\Casts;
 
 
 use Illuminate\Database\Eloquent\JsonEncodingException;

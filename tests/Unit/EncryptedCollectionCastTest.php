@@ -1,15 +1,15 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
+namespace PowerLabs\EloquentEncryption\Tests\Unit;
 
 
 use Illuminate\Database\Eloquent\JsonEncodingException;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Collection;
-use PowerLabs-NZ\EloquentEncryption\Casts\EncryptedCollection;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
-use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
+use PowerLabs\EloquentEncryption\Casts\EncryptedCollection;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\Tests\TestCase;
 
 class EncryptedCollectionCastTest extends TestCase
 {

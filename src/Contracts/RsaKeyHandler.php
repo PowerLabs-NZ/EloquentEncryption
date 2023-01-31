@@ -1,10 +1,10 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Contracts;
+namespace PowerLabs\EloquentEncryption\Contracts;
 
 
-use PowerLabs-NZ\EloquentEncryption\Exceptions\RSAKeyFileMissing;
+use PowerLabs\EloquentEncryption\Exceptions\RSAKeyFileMissing;
 
 interface RsaKeyHandler
 {

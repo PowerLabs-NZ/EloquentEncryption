@@ -1,14 +1,14 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
+namespace PowerLabs\EloquentEncryption\Tests\Unit;
 
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
-use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
-use PowerLabs-NZ\EloquentEncryption\Tests\Traits\WithRSAHelpers;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\Tests\TestCase;
+use PowerLabs\EloquentEncryption\Tests\Traits\WithRSAHelpers;
 
 class GenerateRsaKeysCommandTest extends TestCase
 {

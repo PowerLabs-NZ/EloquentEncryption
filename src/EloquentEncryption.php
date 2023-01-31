@@ -1,14 +1,14 @@
 <?php
 
-namespace PowerLabs-NZ\EloquentEncryption;
+namespace PowerLabs\EloquentEncryption;
 
 use Illuminate\Contracts\Encryption\Encrypter;
 use Illuminate\Support\Facades\Config;
 use phpseclib\Crypt\RSA;
-use PowerLabs-NZ\EloquentEncryption\Contracts\RsaKeyHandler;
-use PowerLabs-NZ\EloquentEncryption\Exceptions\InvalidRsaKeyHandler;
-use PowerLabs-NZ\EloquentEncryption\Exceptions\RSAKeyFileMissing;
-use PowerLabs-NZ\EloquentEncryption\FileSystem\RsaKeyStorageHandler;
+use PowerLabs\EloquentEncryption\Contracts\RsaKeyHandler;
+use PowerLabs\EloquentEncryption\Exceptions\InvalidRsaKeyHandler;
+use PowerLabs\EloquentEncryption\Exceptions\RSAKeyFileMissing;
+use PowerLabs\EloquentEncryption\FileSystem\RsaKeyStorageHandler;
 
 class EloquentEncryption implements Encrypter
 {

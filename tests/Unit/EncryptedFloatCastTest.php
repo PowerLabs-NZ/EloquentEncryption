@@ -1,12 +1,12 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
+namespace PowerLabs\EloquentEncryption\Tests\Unit;
 
 use Illuminate\Foundation\Auth\User;
-use PowerLabs-NZ\EloquentEncryption\Casts\EncryptedFloat;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
-use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
+use PowerLabs\EloquentEncryption\Casts\EncryptedFloat;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\Tests\TestCase;
 
 class EncryptedFloatCastTest extends TestCase
 {

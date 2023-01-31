@@ -1,17 +1,17 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
+namespace PowerLabs\EloquentEncryption\Tests\Unit;
 
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Support\Facades\Schema;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryption;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
-use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
-use PowerLabs-NZ\EloquentEncryption\Tests\Traits\WithRSAHelpers;
+use PowerLabs\EloquentEncryption\EloquentEncryption;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\Tests\TestCase;
+use PowerLabs\EloquentEncryption\Tests\Traits\WithRSAHelpers;
 
 class ModelCustomEncryptorTest extends TestCase
 {

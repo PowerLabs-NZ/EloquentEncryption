@@ -1,6 +1,6 @@
 <?php
 
-namespace PowerLabs-NZ\EloquentEncryption;
+namespace PowerLabs\EloquentEncryption;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string encrypt(mixed $value, bool $serialize = true)
  * @method static string encryptString(string $value)
  *
- * @see \PowerLabs-NZ\EloquentEncryption\EloquentEncryption
+ * @see \PowerLabs\EloquentEncryption\EloquentEncryption
  */
 class EloquentEncryptionFacade extends Facade
 {

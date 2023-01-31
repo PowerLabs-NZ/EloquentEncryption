@@ -33,6 +33,6 @@ return [
      * existence and returned for Encryption and Decryption. This allows for keys to
      * be held in secure Vaults or through another provider.
      */
-    'handler' => \PowerLabs-NZ\EloquentEncryption\FileSystem\RsaKeyStorageHandler::class,
+    'handler' => \PowerLabs\EloquentEncryption\FileSystem\RsaKeyStorageHandler::class,
 
 ];

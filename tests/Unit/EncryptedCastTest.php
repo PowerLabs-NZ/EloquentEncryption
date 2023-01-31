@@ -1,13 +1,13 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Tests\Unit;
+namespace PowerLabs\EloquentEncryption\Tests\Unit;
 
 
 use Illuminate\Foundation\Auth\User;
-use PowerLabs-NZ\EloquentEncryption\Casts\Encrypted;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
-use PowerLabs-NZ\EloquentEncryption\Tests\TestCase;
+use PowerLabs\EloquentEncryption\Casts\Encrypted;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\Tests\TestCase;
 
 class EncryptedCastTest extends TestCase
 {

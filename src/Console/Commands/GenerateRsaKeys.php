@@ -1,11 +1,11 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Console\Commands;
+namespace PowerLabs\EloquentEncryption\Console\Commands;
 
 
 use Illuminate\Console\Command;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
 
 class GenerateRsaKeys extends Command
 {

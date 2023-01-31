@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Exceptions;
+namespace PowerLabs\EloquentEncryption\Exceptions;
 
 
 class RSAKeyFileMissing extends \Exception

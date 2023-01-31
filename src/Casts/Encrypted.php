@@ -1,10 +1,10 @@
 <?php
 
 
-namespace PowerLabs-NZ\EloquentEncryption\Casts;
+namespace PowerLabs\EloquentEncryption\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
-use PowerLabs-NZ\EloquentEncryption\EloquentEncryptionFacade;
+use PowerLabs\EloquentEncryption\EloquentEncryptionFacade;
 
 class Encrypted implements CastsAttributes
 {
